@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "foo",
+  "version": "${version}",
+  "name": "Foo",
+  "description": "",
+  "authors": [
+    "yaesey"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/foo/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "yaesey.foo.FooClient"
+    ],
+    "main": [
+      "yaesey.foo.Foo"
+    ]
+  },
+  "mixins": [
+    "foo.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.6+build.214",
+    "fabric": "*",
+    "minecraft": "1.16.4"
+  }
+}
