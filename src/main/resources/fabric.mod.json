@@ -16,7 +16,7 @@
       "yaesey.foo.FooClient"
     ],
     "main": [
-      "yaesey.foo.Foo"
+      "yaesey.foo.Originiums"
     ]
   },
   "mixins": [

@@ -3,7 +3,7 @@ package yaesey.foo.registries;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import yaesey.foo.Foo;
+import yaesey.foo.Originiums;
 import yaesey.foo.effect.OripathyEffect;
 
 public class EffectRegistry {
@@ -14,7 +14,7 @@ public class EffectRegistry {
 
     public void registry() {
         Registry.register(Registry.STATUS_EFFECT,
-                          new Identifier(Foo.MODID,"ori"),
+                          new Identifier(Originiums.MODID,"ori"),
                           ORI);
     }
 }

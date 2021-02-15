@@ -1,5 +1,12 @@
 {
+  "itemGroup.foo.ori_group": "源石",
   "item.foo.originiums": "源石",
+  "item.foo.originiums.tooltip": "源石给这大地带来了进步，也创造了矿石病和感染者",
+
+  "item.foo.steam_armor_helmet": "蒸汽甲胄（头）",
+  "item.foo.steam_armor_chestplate": "蒸汽甲胄（胸甲）",
+  "item.foo.steam_armor_leggings": "蒸汽甲胄（裤）",
+  "item.foo.steam_armor_boots": "蒸汽甲胄（靴）",
 
   "effect.foo.ori": "矿石病"
 }

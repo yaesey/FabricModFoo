@@ -6,13 +6,13 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffectType;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
-import yaesey.foo.Foo;
 import yaesey.foo.registries.EffectRegistry;
 
 public class OripathyEffect extends StatusEffect {
     private static final int MAX_ORI = 5;
-    private static final int TIME = 0;
+    private static final int TIME = 1;
 
     public OripathyEffect() {
         super(StatusEffectType.NEUTRAL,
@@ -28,9 +28,11 @@ public class OripathyEffect extends StatusEffect {
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         //todo:待添加矿石病的增益
-        if (amplifier >= MAX_ORI) {
-            entity.damage(DamageSource.MAGIC,1.0F);
-        }
+    }
+
+    @Override
+    public void onApplied(LivingEntity entity, AttributeContainer attributes, int amplifier) {
+        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,240,1));
     }
 
     @Override
@@ -40,8 +42,10 @@ public class OripathyEffect extends StatusEffect {
         if (entity.isSpectator() || (entity instanceof PlayerEntity && ((PlayerEntity) entity).isCreative())) {
             return;
         }
-        entity.addStatusEffect(new StatusEffectInstance(EffectRegistry.ORI,1,amplifier + 1));
+        entity.addStatusEffect(new StatusEffectInstance(EffectRegistry.ORI,TIME,amplifier + 1));
         //Foo.LOGGER.info("新的要来");
-        super.onRemoved(entity, attributes, amplifier);
+        if (amplifier >= MAX_ORI) {
+            entity.damage(DamageSource.MAGIC,2.0f);
+        }
     }
 }
