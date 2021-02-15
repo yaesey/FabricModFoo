@@ -5,6 +5,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import yaesey.foo.registries.EffectRegistry;
 import yaesey.foo.registries.ItemRegistry;
+import yaesey.foo.registries.Registries;
 
 public class Originiums implements ModInitializer {
     public static final String MODID = "originiums";
@@ -12,7 +13,7 @@ public class Originiums implements ModInitializer {
     @Override
     public void onInitialize() {
         LOGGER.info("Mod加载中...");
-        ItemRegistry.INSTANCE.registry();
-        EffectRegistry.INSTANCE.registry();
+
+        Registries.INSTANCE.registry();
     }
 }

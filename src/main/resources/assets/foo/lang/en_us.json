@@ -1,11 +1,12 @@
 {
   "itemGroup.foo.ori_group": "Originiums",
   "item.foo.originiums": "Originiums",
-  "item.foo.originiums.tooltip": "Originiums bring progress to this land,at same time,they also create Oripathy and the Infected.",
+  "item.foo.originiums.tooltip": "Originiums bring progress to this land,at the same time,they also create Oripathy and the Infected.",
 
   "item.foo.steam_armor_helmet": "Steam Helmet",
   "item.foo.steam_armor_chestplate": "Steam Chestplate",
   "item.foo.steam_armor_leggings": "Steam Leggings",
   "item.foo.steam_armor_boots": "Steam Boots",
+
   "effect.foo.ori": "Oripathy"
 }

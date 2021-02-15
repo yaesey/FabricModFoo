@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "foo",
+  "id": "originiums",
   "version": "${version}",
-  "name": "Foo",
+  "name": "Originiums",
   "description": "",
   "authors": [
     "yaesey"
@@ -13,7 +13,7 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "yaesey.foo.FooClient"
+      "yaesey.foo.client.OriginiumsClient"
     ],
     "main": [
       "yaesey.foo.Originiums"
