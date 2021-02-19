@@ -22,7 +22,7 @@ import yaesey.foo.registries.EffectRegistry;
 
 import java.util.List;
 
-public class OriginiumsItem extends Item{
+public class OriginiumsItem extends BaseItem{
     public OriginiumsItem(){
         super(new FabricItemSettings()
                     .fireproof()  //源石将会防火
@@ -32,17 +32,15 @@ public class OriginiumsItem extends Item{
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
         //用源石右键击中生物后，该生物将会有概率患上矿石病，如果此前已经患上了，将会加重病情
+        if (RANDOM.nextInt(8) != 0) {
+            return super.useOnEntity(stack,user,entity,hand);
+        }
         int ampilifier = 1;
-        if(entity.hasStatusEffect(EffectRegistry.ORI) && RANDOM.nextInt(8) == 0) {
+        if(entity.hasStatusEffect(EffectRegistry.ORI)) {
             ampilifier = entity.getStatusEffect(EffectRegistry.ORI).getAmplifier() + 1;
             entity.removeStatusEffect(EffectRegistry.ORI);
         }
         entity.addStatusEffect(new StatusEffectInstance(EffectRegistry.ORI,1,ampilifier));
         return super.useOnEntity(stack, user, entity, hand);
-    }
-
-    @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(new TranslatableText(this.getTranslationKey()+".tooltip").formatted(Formatting.GRAY));
     }
 }

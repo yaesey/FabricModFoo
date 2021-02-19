@@ -10,6 +10,9 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import yaesey.foo.registries.EffectRegistry;
 
+/**
+ * todo:待完善
+ */
 public class OripathyEffect extends StatusEffect {
     private static final int MAX_ORI = 5;
     private static final int TIME = 1;
@@ -28,24 +31,16 @@ public class OripathyEffect extends StatusEffect {
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         //todo:待添加矿石病的增益
+        if (amplifier >= MAX_ORI) {
+            entity.damage(DamageSource.MAGIC,2.0F);
+        }
     }
 
     @Override
     public void onApplied(LivingEntity entity, AttributeContainer attributes, int amplifier) {
-        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,240,1));
-    }
-
-    @Override
-    public void onRemoved(LivingEntity entity, AttributeContainer attributes, int amplifier) {
-        //判断该生物是不是处于旁观者模式或创造模式
-        //神（创造模式）会感染矿石病吗？
-        if (entity.isSpectator() || (entity instanceof PlayerEntity && ((PlayerEntity) entity).isCreative())) {
+        if ((entity instanceof PlayerEntity && ((PlayerEntity) entity).isCreative()) || entity.isSpectator()) {
             return;
         }
-        entity.addStatusEffect(new StatusEffectInstance(EffectRegistry.ORI,TIME,amplifier + 1));
-        //Foo.LOGGER.info("新的要来");
-        if (amplifier >= MAX_ORI) {
-            entity.damage(DamageSource.MAGIC,2.0f);
-        }
+        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,240,1));
     }
 }

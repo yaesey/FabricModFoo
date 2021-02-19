@@ -11,7 +11,7 @@ public class OriginiumsClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         Originiums.LOGGER.info("Mod 客户端启动中...");
-        
+
         Registries.INSTANCE.clientRegistry();
     }
 }
