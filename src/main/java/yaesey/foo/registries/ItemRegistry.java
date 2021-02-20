@@ -21,6 +21,7 @@ public class ItemRegistry {
     private static final Item.Settings setting = new Item.Settings().group(OriTab.ORI_GROUP);
 
     public static final Item ORIGINIUMS = new OriginiumsItem();
+    public static final Item LMD = new BaseItem(setting);
     //异铁
     public static final Item ORIRON_SHARD = new BaseItem(setting);
     public static final Item ORIRON = new BaseItem(setting);
@@ -75,6 +76,7 @@ public class ItemRegistry {
                     Registry.register(Registry.ITEM,
                                       new Identifier(Originiums.MODID,field.getName().toLowerCase()),
                                       item);
+                    Originiums.LOGGER.info("已注册物品："+field.getName()+"它的翻译名将会为"+item.getTranslationKey());
                 }
             }
         }catch (Exception ex) {
