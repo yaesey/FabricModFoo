@@ -9,7 +9,7 @@
   ],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/foo/icon.png",
+  "icon": " ",
   "environment": "*",
   "entrypoints": {
     "client": [
@@ -20,7 +20,7 @@
     ]
   },
   "mixins": [
-    "foo.mixins.json"
+    "originiums.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.10.6+build.214",
