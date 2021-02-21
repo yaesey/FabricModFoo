@@ -4,6 +4,7 @@
   "package": "yaesey.foo.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "ModelLoaderMixin"
   ],
   "client": [
   ],
