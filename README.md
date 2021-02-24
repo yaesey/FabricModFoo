@@ -1,5 +1,7 @@
 ## 源石技艺 Originiums
 
+![Mod CI Build](https://github.com/yaesey/Originiums/workflows/.github/workflows/gradle.yml/badge.svg)
+
 源石技艺是游戏《明日方舟》在 Minecraft 的一个同人mod。
 
 我们尽力还原了明日方舟中的大部分物品、矿石病和龙门币经济体系，同时提供一套源石技艺系统，后者可以让你在游戏中获得自己专有的能力以及法术技能等等。
