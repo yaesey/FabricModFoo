@@ -1,4 +1,7 @@
 ## 源石技艺 Originiums
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e1fd1242aa5e49328a408e9e8adc27b6)](https://app.codacy.com/gh/yaesey/Originiums?utm_source=github.com&utm_medium=referral&utm_content=yaesey/Originiums&utm_campaign=Badge_Grade_Settings)
+
 ![Mod CI Build](https://github.com/yaesey/Originiums/workflows/.github/workflows/gradle.yml/badge.svg)
 
 烟尘散去，你睁开眼睛，眼前无数方块，上一秒你还在罗德岛号打电动，没想到因为太逊被其他玩家虐爆，在极端愤怒的情况下，你穿越到 Minecraft 世界里面。
