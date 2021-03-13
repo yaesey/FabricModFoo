@@ -11,13 +11,13 @@ import yaesey.foo.Originiums;
 import yaesey.foo.item.OriginiumsItem;
 
 @Mixin(ModelLoader.class)
-public class ModelLoaderMixin {
+public abstract class ModelLoaderMixin {
     private String getItemModelJson(String path, String type) {
         if ("generated".equals(type) || "handheld".equals(type)) {
             return "{\n" +
                     "  \"parent\": \"item/" + type + "\"," + "\n" +
                     "  \"textures\": {\n" +
-                    "    \"layer0\": \"example_mod:" + path + "\"\n" +
+                    "    \"layer0\":" + "\""+ Originiums.MODID +":" + path + "\"\n" +
                     "  }\n" +
                     "}";
         } else {

@@ -11,8 +11,6 @@ import yaesey.foo.client.OriTab;
 import yaesey.foo.item.BaseItem;
 import yaesey.foo.item.OriginiumsItem;
 import yaesey.foo.item.armor.SteamArmorMaterial;
-import yaesey.foo.item.wand.BaseWandItem;
-import yaesey.foo.item.wand.SupportWandItem;
 
 import java.lang.reflect.Field;
 import java.util.Locale;
@@ -70,8 +68,6 @@ public class ItemRegistry {
     public static final Item STEAM_ARMOR_CHESTPLATE = new ArmorItem(steamArmor,EquipmentSlot.CHEST,setting);
     public static final Item STEAM_ARMOR_LEGGINGS = new ArmorItem(steamArmor,EquipmentSlot.LEGS,setting);
     public static final Item STEAM_ARMOR_BOOTS = new ArmorItem(steamArmor,EquipmentSlot.FEET,setting);
-
-    public static final Item SUPPORT_WAND = new SupportWandItem(setting.group(OriTab.ORI_ARMS));
 
     public void registry() {
         try {

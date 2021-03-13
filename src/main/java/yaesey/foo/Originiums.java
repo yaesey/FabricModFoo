@@ -3,8 +3,6 @@ package yaesey.foo;
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import yaesey.foo.registries.EffectRegistry;
-import yaesey.foo.registries.ItemRegistry;
 import yaesey.foo.registries.Registries;
 
 public class Originiums implements ModInitializer {
