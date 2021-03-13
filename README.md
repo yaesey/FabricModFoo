@@ -1,5 +1,7 @@
 ## 源石技艺 Originiums
-![Mod CI Build](https://github.com/yaesey/Originiums/workflows/.github/workflows/gradle.yml/badge.svg)
+![Mod CI Build](https://img.shields.io/github/workflow/status/yaesey/Originiums/Mod%20CI%20Build?style=for-the-badge)
+![MIT](https://img.shields.io/github/license/yaesey/Originiums?style=for-the-badge)
+[![Codacy](https://img.shields.io/codacy/grade/52c175b85d174f228c78cf366a01323a?style=for-the-badge)](https://app.codacy.com/gh/yaesey/Originiums/dashboard?branch=dev)
 
 烟尘散去，你睁开眼睛，眼前无数方块，上一秒你还在罗德岛号打电动，没想到因为太逊被其他玩家虐爆，在极端愤怒的情况下，你穿越到 Minecraft 世界里面。
 

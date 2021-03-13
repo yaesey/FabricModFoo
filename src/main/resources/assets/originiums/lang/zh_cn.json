@@ -42,5 +42,20 @@
   "item.originiums.steam_armor_leggings": "蒸汽甲胄（裤）",
   "item.originiums.steam_armor_boots": "蒸汽甲胄（靴）",
 
-  "effect.originiums.ori": "矿石病"
+  "effect.originiums.ori": "矿石病",
+
+  "cadre.defender": "重装",
+  "cadre.caster": "术师",
+  "cadre.supporter": "辅助",
+  "cadre.guard": "近卫",
+  "cadre.vanguard": "先锋",
+  "cadre.sniper": "狙击",
+  "cadre.medic": "医疗",
+  "cadre.specialist": "特种",
+
+  "star.2": "两星",
+  "star.3": "三星",
+  "star.4": "四星",
+  "star.5": "五星",
+  "star.6": "六星"
 }

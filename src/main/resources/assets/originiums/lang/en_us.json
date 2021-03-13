@@ -42,5 +42,20 @@
   "item.originiums.steam_armor_leggings": "Steam Leggings",
   "item.originiums.steam_armor_boots": "Steam Boots",
 
-  "effect.originiums.ori": "Oripathy"
+  "effect.originiums.ori": "Oripathy",
+
+  "cadre.defender": "Defender",
+  "cadre.caster": "Caster",
+  "cadre.supporter": "Supporter",
+  "cadre.guard": "Guard",
+  "cadre.vanguard": "Vanguard",
+  "cadre.sniper": "Sniper",
+  "cadre.medic": "Medic",
+  "cadre.specialist": "Specialist",
+
+  "star.2": "Two Stars",
+  "star.3": "Three Stars",
+  "star.4": "Four Stars",
+  "star.5": "Five Stars",
+  "star.6": "Six Stars"
 }
