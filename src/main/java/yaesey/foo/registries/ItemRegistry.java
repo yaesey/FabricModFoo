@@ -13,12 +13,8 @@ import yaesey.foo.item.OriginiumsItem;
 import yaesey.foo.item.armor.SteamArmorMaterial;
 
 import java.lang.reflect.Field;
-import java.util.Locale;
 
 public class ItemRegistry {
-    private ItemRegistry(){ }
-    public static final ItemRegistry INSTANCE = new ItemRegistry();
-
     private static final Item.Settings setting = new Item.Settings().group(OriTab.ORI_GROUP);
 
     public static final Item ORIGINIUMS = new OriginiumsItem();
@@ -62,12 +58,19 @@ public class ItemRegistry {
     public static final Item D32_STEEL = new BaseItem(setting);
     public static final Item BIPOLAR_NANOFLAKE = new BaseItem(setting);
     public static final Item PREPARATION = new BaseItem(setting);
+    public static final Item RMA70_12 = new BaseItem(setting);
+    public static final Item RMA70_24 = new BaseItem(setting);
+    public static final Item COAGULATING_GEL = new BaseItem(setting);
+    public static final Item POLYMERIZED_GEL = new BaseItem(setting);
 
     public static final ArmorMaterial steamArmor = new SteamArmorMaterial();
-    public static final Item STEAM_ARMOR_HELMET = new ArmorItem(steamArmor, EquipmentSlot.HEAD,setting);
-    public static final Item STEAM_ARMOR_CHESTPLATE = new ArmorItem(steamArmor,EquipmentSlot.CHEST,setting);
-    public static final Item STEAM_ARMOR_LEGGINGS = new ArmorItem(steamArmor,EquipmentSlot.LEGS,setting);
-    public static final Item STEAM_ARMOR_BOOTS = new ArmorItem(steamArmor,EquipmentSlot.FEET,setting);
+    public static final Item STEAM_ARMOR_HELMET = new ArmorItem(steamArmor, EquipmentSlot.HEAD,setting.group(OriTab.ORI_ARMS));
+    public static final Item STEAM_ARMOR_CHESTPLATE = new ArmorItem(steamArmor,EquipmentSlot.CHEST,setting.group(OriTab.ORI_ARMS));
+    public static final Item STEAM_ARMOR_LEGGINGS = new ArmorItem(steamArmor,EquipmentSlot.LEGS,setting.group(OriTab.ORI_ARMS));
+    public static final Item STEAM_ARMOR_BOOTS = new ArmorItem(steamArmor,EquipmentSlot.FEET,setting.group(OriTab.ORI_ARMS));
+
+    public static final ItemRegistry INSTANCE = new ItemRegistry();
+    private ItemRegistry(){ }
 
     public void registry() {
         try {

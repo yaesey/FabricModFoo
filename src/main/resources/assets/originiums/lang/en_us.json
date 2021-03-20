@@ -1,5 +1,7 @@
 {
-  "itemGroup.originiums.ori_group": "Originiums",
+  "itemGroup.originiums.ori_group": "Upgrade Materials",
+  "itemGroup.originiums.ori_arms": "Combat Weapons",
+
   "item.originiums.originiums": "Originiums",
   "item.originiums.originiums.tooltip": "Originiums bring progress to this land,at the same time,they also create Oripathy and the Infected.",
 
@@ -36,6 +38,10 @@
   "item.originiums.d32_steel": "D32 Steel ",
   "item.originiums.bipolar_nanoflake": "Bipolar Nanoflacke",
   "item.originiums.preparation": "Polymerization Preparation",
+  "item.originiums.rma70_12": "RMA70-12",
+  "item.originiums.rma70_24": "RMA70-24",
+  "item.originiums.coagulating_gel": "Coagulating Gel",
+  "item.originiums.polymerized_gel": "Polymerized Gel",
 
   "item.originiums.steam_armor_helmet": "Steam Helmet",
   "item.originiums.steam_armor_chestplate": "Steam Chestplate",

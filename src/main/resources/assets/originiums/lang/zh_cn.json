@@ -1,5 +1,7 @@
 {
-  "itemGroup.originiums.ori_group": "源石",
+  "itemGroup.originiums.ori_group": "养成材料",
+  "itemGroup.originiums.ori_arms": "作战武器",
+
   "item.originiums.originiums": "源石",
   "item.originiums.originiums.tooltip": "源石给这大地带来了进步，也创造了矿石病和感染者",
 
@@ -36,6 +38,10 @@
   "item.originiums.d32_steel": "D32钢",
   "item.originiums.bipolar_nanoflake": "双击纳米片",
   "item.originiums.preparation": "聚合剂",
+  "item.originiums.rma70_12": "RMA70-12",
+  "item.originiums.rma70_24": "RMA70-24",
+  "item.originiums.coagulating_gel": "凝胶",
+  "item.originiums.polymerized_gel": "聚合凝胶",
 
   "item.originiums.steam_armor_helmet": "蒸汽甲胄（头）",
   "item.originiums.steam_armor_chestplate": "蒸汽甲胄（胸甲）",
